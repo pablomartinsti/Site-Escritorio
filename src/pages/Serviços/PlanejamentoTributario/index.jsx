@@ -1,6 +1,6 @@
 import { Container, Section } from "./styles";
 import CarroselBlog from "../../../components/CarroselBlog";
-import PlanejamentoTributarioImg from "../../../assets/planejamento-tributario.svg";
+import PlanejamentoTributarioImg from "../../../assets/planejamento-tributario.webp";
 
 function PlanejamentoTributario() {
   return (

@@ -1,5 +1,5 @@
 import { Container, Section } from "./styles";
-import ImpostoRenda from "../../../assets/imposto-renda.png";
+import ImpostoRenda from "../../../assets/imposto-renda.webp";
 
 function ImpostoDeRenda() {
   return (

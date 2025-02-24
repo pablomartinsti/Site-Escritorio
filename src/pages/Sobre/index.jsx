@@ -3,7 +3,7 @@ import CarroselServiços from "../../components/CarroselServiços";
 import Formulario from "../../components/Formulario";
 import CarroselBlog from "../../components/CarroselBlog";
 
-import img from "../../assets/sobre-martir-assessoria-contabil.png";
+import img from "../../assets/sobre-martir-assessoria-contabil.webp";
 function Sobre() {
   return (
     <Container>

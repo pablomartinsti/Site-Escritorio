@@ -1,5 +1,5 @@
 import { Container, Section } from "./styles";
-import RegimeTributarioimg from "../../../assets/regime-tributario.png";
+import RegimeTributarioimg from "../../../assets/regime-tributario.webp";
 
 function RegimeTributario() {
   return (

@@ -1,6 +1,6 @@
 import { Container, Section } from "./styles";
 import CarroselBlog from "../../../components/CarroselBlog";
-import RegularizacaoEmpresasImg from "../../../assets/regularizacao-empresas.png";
+import RegularizacaoEmpresasImg from "../../../assets/regularizacao-empresas.webp";
 
 function RegularizacaoEmpresas() {
   return (

@@ -1,5 +1,5 @@
 import { Container, Section } from "./styles";
-import AberturaEmpresa from "../../../assets/abertura-empresas.svg";
+import AberturaEmpresa from "../../../assets/abertura-empresas.webp";
 import CarroselBlog from "../../../components/CarroselBlog";
 
 function Empresas() {

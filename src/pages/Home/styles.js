@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from "../../assets/forca-lideranca-contabilidade.png";
+import img from "../../assets/forca-lideranca-contabilidade.webp";
 import dicas from "../../assets/dicas.webp";
 import colors from "../../styles/colors";
 

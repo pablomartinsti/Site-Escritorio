@@ -1,5 +1,5 @@
 import { Container, Section } from "./styles";
-import PlanejamentoTributarioimg from "../../../assets/planejamento-tributario.png";
+import PlanejamentoTributarioimg from "../../../assets/planejamento-tributario.webp";
 
 function PlanejamentoTributario() {
   return (

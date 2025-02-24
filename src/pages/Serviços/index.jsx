@@ -2,14 +2,14 @@ import { Container, Section, H1 } from "./styles";
 import Cta from "../../components/Formulario";
 import CarroselBlog from "../../components/CarroselBlog";
 import Card from "../../components/Card";
-import AberturaEmpresa from "../../assets/abertura-empresas.svg";
-import PlanejamentoTributário from "../../assets/planejamento-tributario.svg";
-import EscrituracaoContabilFiscal from "../../assets/Escrituracao-contabil.png";
-import DeclaracaoPf from "../../assets/declaracao-irpf.png";
-import ContabilidadeMensalImg from "../../assets/contabilidade-mensal.png";
-import RegularizaçãoEmpresas from "../../assets/regularizacao-empresas.png";
-import EncerramentoAlteracaoEmpresa from "../../assets/EncerramentoAlteracaoEmpresa.svg";
-import ConsultoriaSuporteContabil from "../../assets/ConsultoriaSuporteContabil.svg";
+import AberturaEmpresa from "../../assets/abertura-empresas.webp";
+import PlanejamentoTributário from "../../assets/planejamento-tributario.webp";
+import EscrituracaoContabilFiscal from "../../assets/Escrituracao-contabil.webp";
+import DeclaracaoPf from "../../assets/declaracao-irpf.webp";
+import ContabilidadeMensalImg from "../../assets/contabilidade-mensal.webp";
+import RegularizaçãoEmpresas from "../../assets/regularizacao-empresas.webp";
+import EncerramentoAlteracaoEmpresa from "../../assets/encerramento-alteracao-empresa.webp";
+import ConsultoriaSuporteContabil from "../../assets/ConsultoriaSuporteContabil.webp";
 import EmissaoNotasFiscais from "../../assets/EmissaoNotasFiscais.webp";
 
 function Serviços() {

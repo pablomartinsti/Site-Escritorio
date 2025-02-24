@@ -1,9 +1,9 @@
 import { Container, Section, BlogGrid } from "./styles";
 import { Link } from "react-router-dom";
 
-import ImpostoRenda from "../../assets/imposto-renda.png";
-import RegimeTributario from "../../assets/regime-tributario.png";
-import PlanejamentoTributarioimg from "../../assets/planejamento-tributario.png";
+import ImpostoRenda from "../../assets/imposto-renda.webp";
+import RegimeTributario from "../../assets/regime-tributario.webp";
+import PlanejamentoTributarioimg from "../../assets/planejamento-tributario.webp";
 
 const posts = [
   {

@@ -1,6 +1,6 @@
 import { Container, Section } from "./styles";
 import CarroselBlog from "../../../components/CarroselBlog";
-import ConsultoriaSuporteContabilImg from "../../../assets/ConsultoriaSuporteContabil.svg";
+import ConsultoriaSuporteContabilImg from "../../../assets/ConsultoriaSuporteContabil.webp";
 
 function ConsultoriaSuporteContabil() {
   return (

@@ -1,6 +1,6 @@
 import { Container, Section } from "./styles";
 import CarroselBlog from "../../../components/CarroselBlog";
-import EncerramentoAlteracaoEmpresasImg from "../../../assets/EncerramentoAlteracaoEmpresa.svg";
+import EncerramentoAlteracaoEmpresasImg from "../../../assets/encerramento-alteracao-empresa.webp";
 
 function EncerramentoAlteracaoEmpresas() {
   return (

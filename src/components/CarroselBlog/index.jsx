@@ -1,10 +1,10 @@
 import Card from "../Card";
 import { Container, Section } from "./styles";
 
-import ImpostoRenda from "../../assets/imposto-renda.png";
-import RegimeTributario from "../../assets/regime-tributario.png";
+import ImpostoRenda from "../../assets/imposto-renda.webp";
+import RegimeTributario from "../../assets/regime-tributario.webp";
 
-import PlanejamentoTributarioimg from "../../assets/planejamento-tributario.png";
+import PlanejamentoTributarioimg from "../../assets/planejamento-tributario.webp";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

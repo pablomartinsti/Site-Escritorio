@@ -1,6 +1,6 @@
 import { Container, Section } from "./styles";
 import CarroselBlog from "../../../components/CarroselBlog";
-import ContabilidadeMensalImg from "../../../assets/contabilidade-mensal.png";
+import ContabilidadeMensalImg from "../../../assets/contabilidade-mensal.webp";
 
 function ContabilidadeMensal() {
   return (

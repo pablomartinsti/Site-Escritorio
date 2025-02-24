@@ -1,6 +1,6 @@
 import { Container, Section } from "./styles";
 import CarroselBlog from "../../../components/CarroselBlog";
-import EscrituracaoContabilFiscalImg from "../../../assets/Escrituracao-contabil.png";
+import EscrituracaoContabilFiscalImg from "../../../assets/Escrituracao-contabil.webp";
 
 function EscrituracaoContabilFiscal() {
   return (

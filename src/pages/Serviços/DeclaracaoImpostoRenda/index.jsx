@@ -1,6 +1,6 @@
 import { Container, Section } from "./styles";
 import CarroselBlog from "../../../components/CarroselBlog";
-import DeclaracaoImpostoRendaImg from "../../../assets/declaracao-irpf.png";
+import DeclaracaoImpostoRendaImg from "../../../assets/declaracao-irpf.webp";
 
 function DeclaracaoImpostoRenda() {
   return (

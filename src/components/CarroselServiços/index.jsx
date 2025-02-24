@@ -5,12 +5,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import AberturaEmpresa from "../../assets/abertura-empresas.svg";
-import PlanejamentoTributário from "../../assets/planejamento-tributario.svg";
-import EscrituracaoContabil from "../../assets/Escrituracao-contabil.png";
-import DeclaracaoPf from "../../assets/declaracao-irpf.png";
-import ContabilidadeMensalImg from "../../assets/contabilidade-mensal.png";
-import RegularizacaoEmpresas from "../../assets/regularizacao-empresas.png";
+import AberturaEmpresa from "../../assets/abertura-empresas.webp";
+import PlanejamentoTributário from "../../assets/planejamento-tributario.webp";
+import EscrituracaoContabil from "../../assets/Escrituracao-contabil.webp";
+import DeclaracaoPf from "../../assets/declaracao-irpf.webp";
+import ContabilidadeMensalImg from "../../assets/contabilidade-mensal.webp";
+import RegularizacaoEmpresas from "../../assets/regularizacao-empresas.webp";
 
 const servicos = [
   {
