@@ -1,6 +1,6 @@
 import { Container, Section } from "./styles";
 import CarroselBlog from "../../../components/CarroselBlog";
-import PlanejamentoTributarioImg from "../../../assets/planejamento-tributario.png";
+import PlanejamentoTributarioImg from "../../../assets/planejamento-tributario.svg";
 
 function PlanejamentoTributario() {
   return (
@@ -14,17 +14,21 @@ function PlanejamentoTributario() {
         <p>
           Você sabia que sua empresa pode estar pagando mais impostos do que
           realmente deveria? O <strong>Planejamento Tributário</strong> é uma
-          estratégia essencial para **reduzir custos, evitar multas e manter sua
-          empresa sempre regularizada**.
+          estratégia essencial para{" "}
+          <strong>
+            reduzir custos, evitar multas e manter sua empresa sempre
+            regularizada.
+          </strong>
         </p>
 
         <p>
           Com a nossa consultoria, analisamos o seu negócio e identificamos as
-          melhores opções para **diminuir impostos de forma legal**. Nosso
-          trabalho inclui:
+          melhores opções para{" "}
+          <strong> diminuir impostos de forma legal. </strong>
+          <br />
+          Nosso trabalho inclui:
         </p>
 
-        {/* Lista formatada corretamente */}
         <ul>
           <li>
             Escolha do melhor regime tributário: Simples Nacional, Lucro
@@ -46,9 +50,10 @@ function PlanejamentoTributario() {
 
         <p>
           Com um planejamento tributário eficiente, sua empresa pode economizar
-          milhares de reais todos os anos. Não corra riscos desnecessários!
-          Conte com a nossa expertise para garantir que sua empresa pague menos
-          impostos de forma legal e segura.
+          <strong> milhares de reais </strong>todos os anos. Não corra riscos
+          desnecessários! Conte com a nossa expertise para garantir que sua
+          empresa pague{" "}
+          <strong> menos impostos de forma legal e segura. </strong>
         </p>
 
         <a

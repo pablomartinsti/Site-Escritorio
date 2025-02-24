@@ -1,5 +1,5 @@
 import { Container, Section } from "./styles";
-import AberturaEmpresa from "../../../assets/abertura-empresas.png";
+import AberturaEmpresa from "../../../assets/abertura-empresas.svg";
 import CarroselBlog from "../../../components/CarroselBlog";
 
 function Empresas() {
@@ -26,7 +26,6 @@ function Empresas() {
           crescer! Oferecemos um serviço completo, que inclui:
         </p>
 
-        {/* Lista formatada corretamente */}
         <ul>
           <li>Consulta e escolha do melhor tipo de empresa para você.</li>
           <li>Registro no CNPJ e Junta Comercial.</li>
@@ -43,7 +42,6 @@ function Empresas() {
           regularizada, pronta para operar sem dores de cabeça.
         </p>
 
-        {/* Botão de contato via WhatsApp */}
         <a
           href="https://wa.me/5534997624502"
           target="_blank"

@@ -5,11 +5,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import AberturaEmpresa from "../../assets/abertura-empresas.png";
-import PlanejamentoTributário from "../../assets/planejamento-tributario.png";
-import GestãoFolhaPagamento from "../../assets/gestao-folha-pagamento.png";
+import AberturaEmpresa from "../../assets/abertura-empresas.svg";
+import PlanejamentoTributário from "../../assets/planejamento-tributario.svg";
+import EscrituracaoContabil from "../../assets/Escrituracao-contabil.png";
 import DeclaracaoPf from "../../assets/declaracao-irpf.png";
-import DeclaracaoPj from "../../assets/declaracao-irpj.png";
+import ContabilidadeMensalImg from "../../assets/contabilidade-mensal.png";
 import RegularizacaoEmpresas from "../../assets/regularizacao-empresas.png";
 
 const servicos = [
@@ -30,32 +30,37 @@ const servicos = [
     link: "servico/planejamento-tributario",
   },
   {
-    title: "Gestão de Folha de Pagamento",
-    description:
-      "Administre salários e encargos trabalhistas com precisão e segurança.",
-    img: GestãoFolhaPagamento,
-    alt: "Imagem ilustrativa de gestão de folha de pagamento",
-  },
-  {
     title: "Declaração de Imposto de Renda Pessoa Física",
     description:
       "Deixe sua declaração em dia com suporte especializado e confiável.",
     img: DeclaracaoPf,
     alt: "Imagem ilustrativa de declaração de imposto de renda pessoa física",
+    link: "servico/declaracao-imposto-renda",
   },
   {
-    title: "Declaração de Imposto de Renda Pessoa Jurídica",
+    title: "Escrituração Contábil e Fiscal",
     description:
-      "Evite problemas fiscais com declarações feitas de forma segura e eficiente.",
-    img: DeclaracaoPj,
-    alt: "Imagem ilustrativa de declaração de imposto de renda pessoa jurídica",
+      "Mantenha sua contabilidade organizada e evite problemas fiscais.",
+    img: EscrituracaoContabil,
+    alt: "Imagem ilustrativa de Escrituração Contábil e Fiscal",
+    link: "servico/escrituracao-contabil-fiscal",
   },
+  {
+    title: "Contabilidade Mensal",
+    description:
+      "Mantenha sua empresa em conformidade fiscal com uma contabilidade organizada e segura todos os meses.",
+    img: ContabilidadeMensalImg,
+    alt: "Imagem ilustrativa de contabilidade mensal",
+    link: "servico/contabilidade-mensal",
+  },
+
   {
     title: "Regularização de Empresas",
     description:
       "Resolva pendências e mantenha sua empresa em conformidade legal.",
     img: RegularizacaoEmpresas,
     alt: "Imagem ilustrativa de regularização de empresas",
+    link: "servico/regularizacao-empresas",
   },
 ];
 

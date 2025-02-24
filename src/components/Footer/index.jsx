@@ -9,9 +9,9 @@ import {
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 
 const servicos = [
-  { nome: "Abertura de Empresas", link: "/abertura-de-empresas" },
-  { nome: "Declaração de Imposto", link: "/declaracao-de-imposto" },
-  { nome: "Planejamento Tributário", link: "/planejamento-tributario" },
+  { nome: "Abertura de Empresas", link: "/servico/abertura-de-empresa" },
+  { nome: "Declaração de Imposto", link: "/servico/declaracao-imposto-renda" },
+  { nome: "Planejamento Tributário", link: "/servico/planejamento-tributario" },
 ];
 
 const navegacao = [
@@ -34,7 +34,7 @@ const contatos = [
   {
     icon: <FaMapMarkerAlt size="25" color="#fff" />,
     texto: "Rua: Alambique 229 Morumbi Uberlândia/MG",
-    link: "#",
+    link: "https://www.google.com/maps/place/Martir+Assessoria+Contabil/@-18.9127814,-48.1912563,17z/data=!3m1!4b1!4m6!3m5!1s0x94a44f11492dff97:0x645d5a0699dbcaa3!8m2!3d-18.9127814!4d-48.1886814!16s%2Fg%2F11m5kl8ty7?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D",
   },
 ];
 
@@ -103,7 +103,9 @@ function Footer() {
           {contatos.map(({ icon, texto, link }) => (
             <div key={texto} className="contato">
               {icon}
-              <a href={link}>{texto}</a>
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                {texto}
+              </a>
             </div>
           ))}
         </div>

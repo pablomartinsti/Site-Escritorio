@@ -51,7 +51,7 @@ export const Section = styled.div`
     display: inline-block;
     background-color: ${colors.yellow};
     margin: 2rem auto;
-    max-width: 400px;
+    max-width: 600px;
     width: 100%;
     color: ${colors.white};
     padding: 1rem;

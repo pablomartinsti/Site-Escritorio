@@ -13,6 +13,12 @@ export const Section = styled.div`
   justify-content: center;
   align-items: center;
   width: 80%;
+  padding: 2rem 0 8rem 0;
+
+  h2 {
+    font-weight: 400;
+    margin: 2rem 0;
+  }
 
   .box {
     display: grid;

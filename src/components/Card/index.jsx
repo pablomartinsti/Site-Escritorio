@@ -20,12 +20,7 @@ function Card({ title, description, img, alt, link }) {
           {/* SEO: Adiciona title para indexação */}
           <p>{description}</p>
           {link !== "#" && (
-            <a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={`Saiba mais sobre ${title}`}
-            >
+            <a href={link} aria-label={`Saiba mais sobre ${title}`}>
               SAIBA MAIS
             </a>
           )}

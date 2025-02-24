@@ -75,16 +75,6 @@ const depoimentos = [
     mensagem:
       "Muito atenciosa, sempre prestativa, nos ajuda muito. Extremamente competente e comprometida.",
   },
-  {
-    nome: "Francisco Alves, Empresário",
-    mensagem:
-      "Excelente! Recomendo! Muito atenciosos, prestam um serviço de qualidade.",
-  },
-  {
-    nome: "Valkiria Soares, Empresária",
-    mensagem:
-      "Muito atenciosa, sempre prestativa, nos ajuda muito. Extremamente competente e comprometida.",
-  },
 ];
 
 function Home() {
