@@ -41,7 +41,7 @@ const contatos = [
 const redesSociais = [
   {
     icon: <FaLinkedin size="25" color="#fff" />,
-    link: "https://www.linkedin.com/",
+    link: "/",
     label: "LinkedIn",
   },
   {
