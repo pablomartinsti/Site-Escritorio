@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import Sobre from "../pages/Sobre";
 import Serviços from "../pages/Serviços";
 import AberturaEmpresa from "../pages/Serviços/AberturaEmpresa";
+import PlanejamentoTributario from "../pages/Serviços/PlanejamentoTributario";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
         <Route
           path="servico/abertura-de-empresa"
           element={<AberturaEmpresa />}
+        />
+        <Route
+          path="servico/planejamento-tributario"
+          element={<PlanejamentoTributario />}
         />
       </Routes>
       <Footer />

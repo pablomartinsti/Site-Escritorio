@@ -27,6 +27,7 @@ const servicos = [
       "Reduza custos com um planejamento fiscal estratégico e personalizado.",
     img: PlanejamentoTributário,
     alt: "Imagem ilustrativa de planejamento tributário",
+    link: "servico/planejamento-tributario",
   },
   {
     title: "Gestão de Folha de Pagamento",
