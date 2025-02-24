@@ -19,6 +19,7 @@ const servicos = [
       "Inicie sua empresa com suporte completo na documentação e registros necessários.",
     img: AberturaEmpresa,
     alt: "Imagem ilustrativa de abertura de empresas",
+    link: "servico/abertura-de-empresa",
   },
   {
     title: "Planejamento Tributário",
@@ -115,13 +116,14 @@ function Serviço() {
       <Section>
         <h2>Soluções Inteligentes para Sua Empresa</h2>
         <Slider {...settings}>
-          {servicos.map(({ title, description, img, alt }, index) => (
+          {servicos.map(({ title, description, img, alt, link }, index) => (
             <Card
               key={index}
               title={title}
               description={description}
               img={img}
               alt={alt}
+              link={link}
             />
           ))}
         </Slider>
