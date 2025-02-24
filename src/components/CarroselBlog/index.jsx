@@ -1,9 +1,10 @@
 import Card from "../Card";
 import { Container, Section } from "./styles";
 
-import EviteMultas from "../../assets/Evite Multas e Problemas Fiscais Mantenha a Contabilidade em Dia.png";
-import ReduzaImpostosPlanejamento from "../../assets/Reduza Impostos Planejamento.png";
-import FluxoCaixaSaudável from "../../assets/Fluxo de Caixa Saudável.png";
+import ImpostoRenda from "../../assets/imposto-renda.png";
+import RegimeTributario from "../../assets/regime-tributario.png";
+
+import PlanejamentoTributarioimg from "../../assets/planejamento-tributario.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,25 +12,29 @@ import Slider from "react-slick";
 
 const blogPosts = [
   {
-    title: "Evite Multas e Problemas Fiscais",
+    title: "Imposto de Renda: Quem Precisa Declarar? Tire suas Dúvidas!",
     description:
-      "Proteja seu negócio contra multas fiscais, Mantenha todas as obrigações legais em dia, Evite prejuízos e garanta tranquilidade.",
-    img: EviteMultas,
-    alt: "Imagem ilustrativa sobre evitar multas fiscais",
+      "Saiba se você é obrigado a declarar o IR e quais documentos são necessários.",
+    img: ImpostoRenda,
+    alt: "Imagem ilustrativa sobre imposto de renda",
+    link: "/blog/imposto-de-renda",
   },
   {
-    title: "Reduza Impostos C/ Planejamento",
+    title:
+      "Simples Nacional, MEI ou Lucro Presumido: Qual é o Melhor para sua Empresa?",
     description:
-      "Pague menos impostos, Descubra como economizar com estratégias fiscais, Aumente sua margem de lucro.",
-    img: ReduzaImpostosPlanejamento,
+      "Descubra qual regime tributário é mais vantajoso para seu negócio.",
+    img: RegimeTributario,
     alt: "Imagem ilustrativa sobre planejamento tributário",
+    link: "/blog/regime-tributario",
   },
   {
-    title: "Fluxo de Caixa Saudável",
+    title: "Planejamento Tributário: Como Pagar Menos Impostos de Forma Legal?",
     description:
-      "Suas finanças estão sob controle? Entenda entradas e saídas com clareza, Tome decisões seguras e melhore o desempenho.",
-    img: FluxoCaixaSaudável,
+      "Veja como otimizar os tributos da sua empresa e economizar dinheiro.",
+    img: PlanejamentoTributarioimg,
     alt: "Imagem ilustrativa sobre fluxo de caixa saudável",
+    link: "blog/planejamento-tributario",
   },
 ];
 
@@ -64,6 +69,7 @@ function Carrosel() {
                 description={post.description}
                 img={post.img}
                 alt={post.alt}
+                link={post.link}
               />
             ))}
           </Slider>

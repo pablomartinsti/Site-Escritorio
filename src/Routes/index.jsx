@@ -14,6 +14,10 @@ import RegularizacaoEmpresas from "../pages/Serviços/RegularizacaoEmpresas";
 import EncerramentoAlteracaoEmpresas from "../pages/Serviços/EncerramentoAlteracaoEmpresas";
 import ConsultoriaSuporteContabil from "../pages/Serviços/ConsultoriaSuporteContabil";
 import EmissaoNotasFiscais from "../pages/Serviços/EmissaoNotasFiscais";
+import Blog from "../pages/Blog";
+import ImpostoDeRenda from "../pages/Blog/ImpostoDeRenda";
+import RegimeTributario from "../pages/Blog/RegimeTributario";
+import Tributario from "../pages/Blog/PlanejamentoTributario";
 
 function App() {
   return (
@@ -60,6 +64,11 @@ function App() {
           path="servico/emissao-notas-fiscais"
           element={<EmissaoNotasFiscais />}
         />
+
+        <Route path="/blog" element={<Blog />} />
+        <Route path="blog/imposto-de-renda" element={<ImpostoDeRenda />} />
+        <Route path="blog/regime-tributario" element={<RegimeTributario />} />
+        <Route path="blog/planejamento-tributario" element={<Tributario />} />
       </Routes>
       <Footer />
     </Router>
