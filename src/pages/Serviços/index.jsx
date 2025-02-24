@@ -28,7 +28,7 @@ function Serviços() {
               title="Abertura de Empresas"
               description="Inicie sua empresa com suporte completo na documentação e registros necessários."
               img={AberturaEmpresa}
-              link="servico/abertura-de-empresa"
+              link="/servico/abertura-de-empresa"
             />
           </div>
           <div>
@@ -36,7 +36,7 @@ function Serviços() {
               title="Planejamento Tributário"
               description="Reduza custos com um planejamento fiscal estratégico e personalizado."
               img={PlanejamentoTributário}
-              link="servico/planejamento-tributario"
+              link="/servico/planejamento-tributario"
             />
           </div>
           <div>
@@ -44,7 +44,7 @@ function Serviços() {
               title="Escrituração Contábil e Fiscal"
               description="Mantenha sua contabilidade organizada e evite problemas fiscais."
               img={EscrituracaoContabilFiscal}
-              link="servico/escrituracao-contabil-fiscal"
+              link="/servico/escrituracao-contabil-fiscal"
             />
           </div>
           <div>
@@ -52,7 +52,7 @@ function Serviços() {
               title="Declaração de Imposto de Renda Pessoa Física"
               description="Deixe sua declaração em dia com suporte especializado e confiável."
               img={DeclaracaoPf}
-              link="servico/declaracao-imposto-renda"
+              link="/servico/declaracao-imposto-renda"
             />
           </div>
           <div>
@@ -60,7 +60,7 @@ function Serviços() {
               title="Contabilidade Mensal"
               description="Mantenha sua empresa em conformidade fiscal com uma contabilidade organizada e segura todos os meses."
               img={ContabilidadeMensalImg}
-              link="servico/contabilidade-mensal"
+              link="/servico/contabilidade-mensal"
             />
           </div>
           <div>
@@ -68,7 +68,7 @@ function Serviços() {
               title="Regularização de Empresas"
               description="Resolva pendências e mantenha sua empresa em conformidade legal."
               img={RegularizaçãoEmpresas}
-              link="servico/regularizacao-empresas"
+              link="/servico/regularizacao-empresas"
             />
           </div>
           <div>
@@ -76,7 +76,7 @@ function Serviços() {
               title="Encerramento e Alteração de Empresas"
               description="Realize mudanças no seu CNPJ ou encerre sua empresa com total segurança jurídica."
               img={EncerramentoAlteracaoEmpresa}
-              link="servico/encerramento-alteracao-empresas"
+              link="/servico/encerramento-alteracao-empresas"
             />
           </div>
           <div>
@@ -84,7 +84,7 @@ function Serviços() {
               title="Consultoria e Suporte na Área Contábil"
               description="Conte com um especialista para resolver dúvidas e garantir a melhor estratégia contábil para sua empresa."
               img={ConsultoriaSuporteContabil}
-              link="servico/consultoria-suporte-contabil"
+              link="/servico/consultoria-suporte-contabil"
             />
           </div>
           <div>
@@ -92,7 +92,7 @@ function Serviços() {
               title="Emissão de Notas Fiscais"
               description="Regularize e administre a emissão de notas fiscais para sua empresa de forma simples e segura."
               img={EmissaoNotasFiscais}
-              link="servico/emissao-notas-fiscais"
+              link="/servico/emissao-notas-fiscais"
             />
           </div>
         </div>

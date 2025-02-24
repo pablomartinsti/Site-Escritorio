@@ -34,7 +34,7 @@ const blogPosts = [
       "Veja como otimizar os tributos da sua empresa e economizar dinheiro.",
     img: PlanejamentoTributarioimg,
     alt: "Imagem ilustrativa sobre fluxo de caixa saudável",
-    link: "blog/planejamento-tributario",
+    link: "/blog/planejamento-tributario",
   },
 ];
 

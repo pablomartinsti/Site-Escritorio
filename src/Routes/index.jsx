@@ -29,46 +29,46 @@ function App() {
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/servico" element={<Serviços />} />
         <Route
-          path="servico/abertura-de-empresa"
+          path="/servico/abertura-de-empresa"
           element={<AberturaEmpresa />}
         />
         <Route
-          path="servico/planejamento-tributario"
+          path="/servico/planejamento-tributario"
           element={<PlanejamentoTributario />}
         />
         <Route
-          path="servico/escrituracao-contabil-fiscal"
+          path="/servico/escrituracao-contabil-fiscal"
           element={<EscrituracaoContabilFiscal />}
         />
         <Route
-          path="servico/declaracao-imposto-renda"
+          path="/servico/declaracao-imposto-renda"
           element={<DeclaracaoImpostoRenda />}
         />
         <Route
-          path="servico/contabilidade-mensal"
+          path="/servico/contabilidade-mensal"
           element={<ContabilidadeMensal />}
         />
         <Route
-          path="servico/regularizacao-empresas"
+          path="/servico/regularizacao-empresas"
           element={<RegularizacaoEmpresas />}
         />
         <Route
-          path="servico/encerramento-alteracao-empresas"
+          path="/servico/encerramento-alteracao-empresas"
           element={<EncerramentoAlteracaoEmpresas />}
         />
         <Route
-          path="servico/consultoria-suporte-contabil"
+          path="/servico/consultoria-suporte-contabil"
           element={<ConsultoriaSuporteContabil />}
         />
         <Route
-          path="servico/emissao-notas-fiscais"
+          path="/servico/emissao-notas-fiscais"
           element={<EmissaoNotasFiscais />}
         />
 
         <Route path="/blog" element={<Blog />} />
-        <Route path="blog/imposto-de-renda" element={<ImpostoDeRenda />} />
-        <Route path="blog/regime-tributario" element={<RegimeTributario />} />
-        <Route path="blog/planejamento-tributario" element={<Tributario />} />
+        <Route path="/blog/imposto-de-renda" element={<ImpostoDeRenda />} />
+        <Route path="/blog/regime-tributario" element={<RegimeTributario />} />
+        <Route path="/blog/planejamento-tributario" element={<Tributario />} />
       </Routes>
       <Footer />
     </Router>

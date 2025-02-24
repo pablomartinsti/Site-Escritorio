@@ -19,7 +19,7 @@ const servicos = [
       "Inicie sua empresa com suporte completo na documentação e registros necessários.",
     img: AberturaEmpresa,
     alt: "Imagem ilustrativa de abertura de empresas",
-    link: "servico/abertura-de-empresa",
+    link: "/servico/abertura-de-empresa",
   },
   {
     title: "Planejamento Tributário",
@@ -27,7 +27,7 @@ const servicos = [
       "Reduza custos com um planejamento fiscal estratégico e personalizado.",
     img: PlanejamentoTributário,
     alt: "Imagem ilustrativa de planejamento tributário",
-    link: "servico/planejamento-tributario",
+    link: "/servico/planejamento-tributario",
   },
   {
     title: "Declaração de Imposto de Renda Pessoa Física",
@@ -35,7 +35,7 @@ const servicos = [
       "Deixe sua declaração em dia com suporte especializado e confiável.",
     img: DeclaracaoPf,
     alt: "Imagem ilustrativa de declaração de imposto de renda pessoa física",
-    link: "servico/declaracao-imposto-renda",
+    link: "/servico/declaracao-imposto-renda",
   },
   {
     title: "Escrituração Contábil e Fiscal",
@@ -43,7 +43,7 @@ const servicos = [
       "Mantenha sua contabilidade organizada e evite problemas fiscais.",
     img: EscrituracaoContabil,
     alt: "Imagem ilustrativa de Escrituração Contábil e Fiscal",
-    link: "servico/escrituracao-contabil-fiscal",
+    link: "/servico/escrituracao-contabil-fiscal",
   },
   {
     title: "Contabilidade Mensal",
@@ -51,7 +51,7 @@ const servicos = [
       "Mantenha sua empresa em conformidade fiscal com uma contabilidade organizada e segura todos os meses.",
     img: ContabilidadeMensalImg,
     alt: "Imagem ilustrativa de contabilidade mensal",
-    link: "servico/contabilidade-mensal",
+    link: "/servico/contabilidade-mensal",
   },
 
   {
@@ -60,7 +60,7 @@ const servicos = [
       "Resolva pendências e mantenha sua empresa em conformidade legal.",
     img: RegularizacaoEmpresas,
     alt: "Imagem ilustrativa de regularização de empresas",
-    link: "servico/regularizacao-empresas",
+    link: "/servico/regularizacao-empresas",
   },
 ];
 
