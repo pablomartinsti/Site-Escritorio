@@ -11,6 +11,9 @@ export const Container = styled.div`
     padding: 2rem 5rem;
     flex-wrap: wrap;
     gap: 4rem;
+    @media (max-width: 480px) {
+      justify-content: center;
+    }
     .box-logo {
       width: 13rem;
     }

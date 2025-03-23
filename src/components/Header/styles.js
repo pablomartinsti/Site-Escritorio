@@ -2,7 +2,11 @@ import styled from "styled-components";
 import colors from "../../styles/colors";
 import { IconButton, Box } from "@mui/material";
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+`;
 
 export const HeaderTop = styled.div`
   display: flex;

@@ -16,7 +16,7 @@ export const Section = styled.div`
 export const BoxHome = styled.div`
   position: relative;
   width: 100%;
-  min-height: calc(100vh - 113px);
+  min-height: calc(100vh + 113px);
   display: flex;
   align-items: center;
   justify-content: center;
