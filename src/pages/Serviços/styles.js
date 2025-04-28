@@ -38,7 +38,7 @@ export const H1 = styled.h1`
   font-size: 3rem;
   white-space: pre-line;
   line-height: 1.8;
-  padding: 2rem 0;
+
   @media (max-width: 820px) {
     font-size: 2rem;
   }
