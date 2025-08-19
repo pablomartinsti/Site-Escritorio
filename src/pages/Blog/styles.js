@@ -1,84 +1,52 @@
-import styled from "styled-components";
-import colors from "../../styles/colors";
+import styled from 'styled-components';
+import colors from '../../styles/colors';
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+export const Hero = styled.div`
+  background: ${colors.blueDark};
+  color: ${colors.white};
+  padding: 48px 0;
+  border-bottom: 1px solid ${colors.blueDeep};
 `;
 
-export const Section = styled.div`
-  width: 80%;
+export const Container = styled.section`
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+`;
+
+export const H1 = styled.h1`
+  margin: 0;
   text-align: center;
-  padding: 2rem 0;
+  font-size: 34px;
+  font-weight: 900;
+  color: ${colors.white};
+  text-shadow: 0 2px 8px ${colors.shadowSoft};
+`;
 
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
+export const Sub = styled.p`
+  margin: 8px 0 0;
+  text-align: center;
+  color: ${colors.gold};
+  font-weight: 600;
+`;
 
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+export const Grid = styled.div`
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 320px;
+  margin-top: 24px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
   }
 `;
 
-export const BlogGrid = styled.div`
+export const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  text-align: left;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
-  .blog-card {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-
-    img {
-      width: 100%;
-      height: 20rem;
-      border-radius: 8px;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      margin: 1rem 0;
-    }
-
-    p {
-      font-size: 1rem;
-      margin-bottom: 1rem;
-    }
-
-    a {
-      display: inline-block;
-      background: ${colors.yellow};
-      color: ${colors.white};
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
-
-      &:hover {
-        background-color: ${colors.black};
-        transform: scale(1.05);
-      }
-    }
-  }
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
   }
 `;

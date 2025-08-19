@@ -1,30 +1,31 @@
-import { useRef, useState, useCallback } from "react";
-import emailjs from "@emailjs/browser";
-import { Container, Section } from "./styles";
-import { FaEnvelope, FaUser, FaPhone, FaWhatsapp } from "react-icons/fa";
-import InputMask from "react-input-mask";
-import { z } from "zod";
+import { useRef, useState, useCallback } from 'react';
+import emailjs from '@emailjs/browser';
+import { Container, Section } from './styles';
+import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaUser, FaWhatsapp } from 'react-icons/fa';
+import InputMask from 'react-input-mask';
+import { motion } from 'framer-motion';
+
+import { z } from 'zod';
+import Button from '../Button';
 
 const formSchema = z.object({
-  from_name: z.string().min(3, "Nome precisa ter pelo menos 3 caracteres"),
-  from_email: z.string().email("E-mail inválido"),
-  phone: z.string().min(10, "Número de telefone inválido"),
-  message: z
-    .string()
-    .min(10, "A mensagem precisa ter pelo menos 10 caracteres"),
+  from_name: z.string().min(3, 'Nome precisa ter pelo menos 3 caracteres'),
+  from_email: z.string().email('E-mail inválido'),
+  phone: z.string().min(10, 'Número de telefone inválido'),
+  message: z.string().min(10, 'A mensagem precisa ter pelo menos 10 caracteres')
 });
 
 function Formulario() {
   const formRef = useRef(null);
   const [isSending, setIsSending] = useState(false);
-  const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const sendEmail = useCallback(async (e) => {
     e.preventDefault();
     setIsSending(true);
-    setMessage("");
-    setErrorMessage("");
+    setMessage('');
+    setErrorMessage('');
 
     if (!formRef.current) return;
 
@@ -33,9 +34,7 @@ function Formulario() {
 
     const result = formSchema.safeParse(data);
     if (!result.success) {
-      const errorMessages = result.error.errors
-        .map((err) => err.message)
-        .join(", ");
+      const errorMessages = result.error.errors.map((err) => err.message).join(', ');
       setErrorMessage(errorMessages);
       setMessage(errorMessages);
       setIsSending(false);
@@ -50,12 +49,12 @@ function Formulario() {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
-      setMessage("Mensagem enviada com sucesso!");
+      setMessage('Mensagem enviada com sucesso!');
       formRef.current.reset();
     } catch (error) {
-      console.error("Erro ao enviar mensagem:", error);
-      setErrorMessage("Erro ao enviar mensagem. Tente novamente.");
-      setMessage("Erro ao enviar mensagem. Tente novamente.");
+      console.error('Erro ao enviar mensagem:', error);
+      setErrorMessage('Erro ao enviar mensagem. Tente novamente.');
+      setMessage('Erro ao enviar mensagem. Tente novamente.');
     } finally {
       setIsSending(false);
     }
@@ -65,37 +64,53 @@ function Formulario() {
     <Container>
       <Section>
         <div className="box-cta">
-          <div className="box">
-            <h2>
-              Conte com Nossa Experiência para Soluções Contábeis Personalizadas
-            </h2>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="box"
+          >
+            <h2>Conte com Nossa Experiência para Soluções Contábeis Personalizadas</h2>
             <p>
-              Simplifique suas finanças! Estamos aqui para ajudar você a
-              alcançar os melhores resultados na gestão contábil do seu negócio.
-              Preencha o formulário ou entre em contato pelo WhatsApp ou e-mail.
+              Simplifique suas finanças! Estamos aqui para ajudar você a alcançar os melhores resultados na gestão
+              contábil do seu negócio. Preencha o formulário ou entre em contato pelo WhatsApp ou e-mail.
             </p>
-
-            <div>
-              <div className="icon">
-                <FaWhatsapp size="20" color="#E8B931" />
-                <a
-                  href="https://wa.me/5534997624502"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+            <div className="contacts">
+              <div className="contact-item">
+                <FaWhatsapp />
+                <a href="https://wa.me/5534997624502" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                   (34) 9 9762-4502
                 </a>
               </div>
-              <div className="icon">
-                <FaEnvelope size="20" color="#E8B931" />
-                <a href="mailto:karinehelenacontadora@gmail.com">
-                  Karinehelenacontadora@gmail.com
+              <div className="contact-item">
+                <FaEnvelope />
+                <a href="mailto:comercial@martircontabil.com.br" aria-label="E-mail">
+                  comercial@martircontabil.com.br
+                </a>
+              </div>
+              <div className="contact-item">
+                <FaMapMarkerAlt />
+                <a
+                  href="https://www.google.com/maps/place/Rua+Alambique,+229,+Uberlândia+-+MG"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Endereço no Google Maps"
+                >
+                  Rua: Alambique, 229, Morumbi, Uberlândia/MG.
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <form ref={formRef} onSubmit={sendEmail}>
+          <motion.form
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.2 }}
+            ref={formRef}
+            onSubmit={sendEmail}
+          >
             <div className="input-group">
               <label htmlFor="name">Nome</label>
               <div className="input-box">
@@ -158,16 +173,19 @@ function Formulario() {
               ></textarea>
             </div>
 
-            {message && (
-              <p className={`message ${errorMessage ? "error" : "success"}`}>
-                {message}
-              </p>
-            )}
+            {message && <p className={`message ${errorMessage ? 'error' : 'success'}`}>{message}</p>}
 
-            <button type="submit" disabled={isSending}>
-              {isSending ? "Enviando..." : "Solicitar Consultoria Gratuita"}
-            </button>
-          </form>
+            <Button
+              as="button"
+              type="submit"
+              variant="blue"
+              size="lg"
+              disabled={isSending}
+              aria-label="Enviar formulário de contato"
+            >
+              {isSending ? 'Enviando...' : 'Solicitar Consultoria Gratuita'}
+            </Button>
+          </motion.form>
         </div>
       </Section>
     </Container>

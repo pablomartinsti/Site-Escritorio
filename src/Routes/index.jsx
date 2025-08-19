@@ -1,77 +1,65 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "../pages/Home";
-import Contato from "../pages/Contato";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Sobre from "../pages/Sobre";
-import Serviços from "../pages/Serviços";
-import AberturaEmpresa from "../pages/Serviços/AberturaEmpresa";
-import PlanejamentoTributario from "../pages/Serviços/PlanejamentoTributario";
-import EscrituracaoContabilFiscal from "../pages/Serviços/EscrituracaoContabilFiscal";
-import DeclaracaoImpostoRenda from "../pages/Serviços/DeclaracaoImpostoRenda";
-import ContabilidadeMensal from "../pages/Serviços/ContabilidadeMensal";
-import RegularizacaoEmpresas from "../pages/Serviços/RegularizacaoEmpresas";
-import EncerramentoAlteracaoEmpresas from "../pages/Serviços/EncerramentoAlteracaoEmpresas";
-import ConsultoriaSuporteContabil from "../pages/Serviços/ConsultoriaSuporteContabil";
-import EmissaoNotasFiscais from "../pages/Serviços/EmissaoNotasFiscais";
-import Blog from "../pages/Blog";
-import ImpostoDeRenda from "../pages/Blog/ImpostoDeRenda";
-import RegimeTributario from "../pages/Blog/RegimeTributario";
-import Tributario from "../pages/Blog/PlanejamentoTributario";
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Home from '../pages/Home';
+import Contato from '../pages/Contato';
+import BlogPage from '../pages/Blog';
+import Sobre from '../pages/Sobre';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import ServicosIndex from '../pages/Serviços';
+import AberturaEmpresa from '../pages/Serviços/aberturaEmpresas';
+import CertificadoDigital from '../pages/Serviços/certificadoDigital';
+import ConsultoriaContabil from '../pages/Serviços/consultoriaContabil';
+import ContabilidadeMensal from '../pages/Serviços/contabilidadeMensal';
+import ImpostoDeRendaServico from '../pages/Serviços/impostoRenda';
+import PlanejamentoTributarioServico from '../pages/Serviços/planejamentoTributario';
 
-function App() {
+// 👇 NOVO
+import BlogPost from '../pages/BlogPost';
+
+import WhatsAppFloat from '../components/WhatsAppFloat';
+import ScrollToTop from '../components/ScrollToTop';
+
+export default function App() {
   return (
     <Router>
       <Header />
+      <ScrollToTop />
       <Routes>
+        {/* básicas */}
         <Route path="/" element={<Home />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/sobre" element={<Sobre />} />
-        <Route path="/servico" element={<Serviços />} />
-        <Route
-          path="/servico/abertura-de-empresa"
-          element={<AberturaEmpresa />}
-        />
-        <Route
-          path="/servico/planejamento-tributario"
-          element={<PlanejamentoTributario />}
-        />
-        <Route
-          path="/servico/escrituracao-contabil-fiscal"
-          element={<EscrituracaoContabilFiscal />}
-        />
-        <Route
-          path="/servico/declaracao-imposto-renda"
-          element={<DeclaracaoImpostoRenda />}
-        />
-        <Route
-          path="/servico/contabilidade-mensal"
-          element={<ContabilidadeMensal />}
-        />
-        <Route
-          path="/servico/regularizacao-empresas"
-          element={<RegularizacaoEmpresas />}
-        />
-        <Route
-          path="/servico/encerramento-alteracao-empresas"
-          element={<EncerramentoAlteracaoEmpresas />}
-        />
-        <Route
-          path="/servico/consultoria-suporte-contabil"
-          element={<ConsultoriaSuporteContabil />}
-        />
-        <Route
-          path="/servico/emissao-notas-fiscais"
-          element={<EmissaoNotasFiscais />}
-        />
 
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/imposto-de-renda" element={<ImpostoDeRenda />} />
-        <Route path="/blog/regime-tributario" element={<RegimeTributario />} />
-        <Route path="/blog/planejamento-tributario" element={<Tributario />} />
+        {/* serviços */}
+        <Route path="/servicos" element={<ServicosIndex />} />
+        <Route path="/servicos/abertura-de-empresas" element={<AberturaEmpresa />} />
+        <Route path="/servicos/certificado-digital" element={<CertificadoDigital />} />
+        <Route path="/servicos/consultoria-contabil" element={<ConsultoriaContabil />} />
+        <Route path="/servicos/contabilidade-mensal" element={<ContabilidadeMensal />} />
+        <Route path="/servicos/imposto-de-renda" element={<ImpostoDeRendaServico />} />
+        <Route path="/servicos/planejamento-tributario" element={<PlanejamentoTributarioServico />} />
+
+        {/* BLOG */}
+        <Route path="/blog" element={<BlogPage />} />
+        {/* 👇 NOVA ROTA */}
+        <Route path="/blog/:slug" element={<BlogPost />} />
+
+        {/* compat */}
+        <Route path="/servico/abertura-de-empresa" element={<Navigate to="/servicos/abertura-de-empresas" replace />} />
+        <Route path="/Serviços/*" element={<Navigate to="/servicos" replace />} />
+
+        {/* fallback */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+
+      <WhatsAppFloat
+        phone="5534997624502"
+        message="Olá! Vim pelo site e quero saber mais sobre a consultoria."
+        bubbleText="Posso te ajudar agora? Chame no WhatsApp 🙂"
+        showBubbleInitially={true}
+        autoHideMs={4000}
+      />
       <Footer />
     </Router>
   );
 }
-export default App;
