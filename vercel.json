@@ -1,21 +1,3 @@
 {
-  "rewrites": [{ "source": "/:path*", "destination": "/index.html" }],
-  "redirects": [
-    { "source": "/servico", "destination": "/servicos", "permanent": true },
-    { "source": "/servico/:slug", "destination": "/servicos/:slug", "permanent": true },
-
-    { "source": "/Servicos/:path*", "destination": "/servicos/:path*", "permanent": true },
-    { "source": "/Servicos", "destination": "/servicos", "permanent": true },
-
-    { "source": "/Servi%C3%A7os/:path*", "destination": "/servicos/:path*", "permanent": true },
-    { "source": "/Servi%C3%A7os", "destination": "/servicos", "permanent": true },
-    { "source": "/servi%C3%A7os/:path*", "destination": "/servicos/:path*", "permanent": true },
-    { "source": "/servi%C3%A7os", "destination": "/servicos", "permanent": true },
-
-    { "source": "/post/:slug", "destination": "/blog/:slug", "permanent": true },
-    { "source": "/artigos/:slug", "destination": "/blog/:slug", "permanent": true },
-    { "source": "/noticias/:slug", "destination": "/blog/:slug", "permanent": true },
-    { "source": "/Blog/:path*", "destination": "/blog/:path*", "permanent": true }
-  ],
-  "cleanUrls": true
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
