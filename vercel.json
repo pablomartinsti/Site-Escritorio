@@ -1,8 +1,29 @@
 {
-  "rewrites": [
+  "redirects": [
+    { "source": "/servico", "destination": "/servicos", "permanent": true },
+    { "source": "/servico/abertura-de-empresa", "destination": "/servicos/abertura-de-empresas", "permanent": true },
+    { "source": "/servico/certificado-digital", "destination": "/servicos/certificado-digital", "permanent": true },
+    { "source": "/servico/consultoria-contabil", "destination": "/servicos/consultoria-contabil", "permanent": true },
+    { "source": "/servico/contabilidade-mensal", "destination": "/servicos/contabilidade-mensal", "permanent": true },
+    { "source": "/servico/imposto-de-renda", "destination": "/servicos/imposto-de-renda", "permanent": true },
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+      "source": "/servico/planejamento-tributario",
+      "destination": "/servicos/planejamento-tributario",
+      "permanent": true
+    },
+
+    { "source": "/Serviços/(.*)", "destination": "/servicos/$1", "permanent": true },
+    { "source": "/Serviços", "destination": "/servicos", "permanent": true },
+    { "source": "/Servicos/(.*)", "destination": "/servicos/$1", "permanent": true },
+    { "source": "/Servicos", "destination": "/servicos", "permanent": true },
+    { "source": "/serviços/(.*)", "destination": "/servicos/$1", "permanent": true },
+    { "source": "/serviços", "destination": "/servicos", "permanent": true },
+
+    { "source": "/post/:slug", "destination": "/blog/:slug", "permanent": true },
+    { "source": "/artigos/:slug", "destination": "/blog/:slug", "permanent": true },
+    { "source": "/noticias/:slug", "destination": "/blog/:slug", "permanent": true },
+    { "source": "/Blog/(.*)", "destination": "/blog/$1", "permanent": true }
+  ],
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "cleanUrls": true
 }
