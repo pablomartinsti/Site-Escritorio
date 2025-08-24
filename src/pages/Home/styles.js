@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import bannerMain from '../../assets/contadora-escritorio-de-contabilidade-consultoria.webp';
+
 import aboutMartirImg from '../../assets/sobre-martir-assessoria-contabil-uberlandia.webp';
 import colors from '../../styles/colors';
 
@@ -18,22 +18,28 @@ export const HeroSection = styled.section`
     height: auto;
   }
 
-  &::before {
-    content: '';
+  /* imagem real no DOM */
+  .hero-bg {
     position: absolute;
-    filter: brightness(0.65);
-    top: 0;
-    left: 0;
+    inset: 0;
+    z-index: -2;
+  }
+  .hero-bg img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
-    background: url(${bannerMain});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: -2;
-    @media (max-width: 1024px) {
-      background-position: right;
-    }
+    object-fit: cover;
+  }
+
+  /* overlay escuro */
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: -1;
+    pointer-events: none;
   }
 
   .hero-content {
@@ -52,42 +58,43 @@ export const HeroSection = styled.section`
       height: calc(100vh - 250px);
     }
   }
+
   .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
+
   h1 {
     font-size: 1.4rem;
     font-weight: 300;
     margin-bottom: 2rem;
-
     @media (max-width: 480px) {
       font-size: 1rem;
     }
   }
+
   h2 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1.2rem;
     color: ${colors.white};
-    font-weight: 700;
     filter: brightness(1.1) drop-shadow(0 1px 4px ${colors.blueDark});
-
     @media (max-width: 480px) {
       font-size: 1.7rem;
     }
   }
+
   p {
     font-size: 1.15rem;
     font-weight: 300;
     margin: 2rem 0;
-
     @media (max-width: 480px) {
       font-size: 1rem;
     }
   }
+
   .hero-buttons {
     margin-top: 2rem;
     display: flex;
