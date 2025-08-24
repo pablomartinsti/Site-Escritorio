@@ -46,7 +46,7 @@ export default function App() {
 
         {/* compat */}
         <Route path="/servico/abertura-de-empresa" element={<Navigate to="/servicos/abertura-de-empresas" replace />} />
-        <Route path="/Serviços/*" element={<Navigate to="/servicos" replace />} />
+        <Route path="/Servicos/*" element={<Navigate to="/servicos" replace />} />
 
         {/* fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />
