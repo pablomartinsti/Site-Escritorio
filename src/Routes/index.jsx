@@ -5,13 +5,13 @@ import BlogPage from '../pages/Blog';
 import Sobre from '../pages/Sobre';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import ServicosIndex from '../pages/Serviços';
-import AberturaEmpresa from '../pages/Serviços/aberturaEmpresas';
-import CertificadoDigital from '../pages/Serviços/certificadoDigital';
-import ConsultoriaContabil from '../pages/Serviços/consultoriaContabil';
-import ContabilidadeMensal from '../pages/Serviços/contabilidadeMensal';
-import ImpostoDeRendaServico from '../pages/Serviços/impostoRenda';
-import PlanejamentoTributarioServico from '../pages/Serviços/planejamentoTributario';
+import ServicosIndex from '../pages/Servicos';
+import AberturaEmpresa from '../pages/Servicos/aberturaEmpresas';
+import CertificadoDigital from '../pages/Servicos/certificadoDigital';
+import ConsultoriaContabil from '../pages/Servicos/consultoriaContabil';
+import ContabilidadeMensal from '../pages/Servicos/contabilidadeMensal';
+import ImpostoDeRendaServico from '../pages/Servicos/impostoRenda';
+import PlanejamentoTributarioServico from '../pages/Servicos/planejamentoTributario';
 
 // 👇 NOVO
 import BlogPost from '../pages/BlogPost';
