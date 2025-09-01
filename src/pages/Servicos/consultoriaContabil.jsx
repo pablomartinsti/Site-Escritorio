@@ -2,7 +2,7 @@
 import { Helmet } from 'react-helmet-async';
 import { useMemo } from 'react';
 import ServicePage from '../../components/ServicePage';
-import ImgConsultoria from '../../assets/consultoria-contabil.webp';
+import ImgConsultoria from '../../assets/consultoria-contabil-600.webp';
 
 /* ===== SVGs decorativos (aria-hidden) ===== */
 const SvgRapidez = (props) => (

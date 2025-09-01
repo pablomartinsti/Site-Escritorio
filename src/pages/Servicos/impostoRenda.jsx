@@ -2,7 +2,7 @@
 import { Helmet } from 'react-helmet-async';
 import { useMemo } from 'react';
 import ServicePage from '../../components/ServicePage';
-import ImgIR from '../../assets/imposto-de-renda.webp';
+import ImgIR from '../../assets/imposto-de-renda-600.webp';
 
 /* ===== SVGs decorativos (aria-hidden) ===== */
 const SvgRapidez = (props) => (

@@ -2,7 +2,7 @@
 import { Helmet } from 'react-helmet-async';
 import { useMemo } from 'react';
 import ServicePage from '../../components/ServicePage';
-import ImgCertificado from '../../assets/certificado-digital-a1.webp';
+import ImgCertificado from '../../assets/certificado-digital-a1-600.webp';
 
 /* ===== SVGs decorativos (aria-hidden) ===== */
 const SvgRapidez = (props) => (
