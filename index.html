@@ -20,7 +20,15 @@
     />
 
     <!-- Preload da imagem LCP (mova o arquivo para /public) -->
-    <link rel="preload" as="image" href="/contadora-escritorio-de-contabilidade-consultoria.webp" type="image/webp" />
+    <link
+      rel="preload"
+      as="image"
+      href="/contadora-1200.webp"
+      imagesrcset="/contadora-480.webp 480w, /contadora-768.webp 768w, /contadora-1200.webp 1200w"
+      imagesizes="(max-width: 600px) 480px, (max-width: 992px) 768px, 1200px"
+      fetchpriority="high"
+    />
+
     <title>Martir Assessoria Contábil</title>
 
     <script>
