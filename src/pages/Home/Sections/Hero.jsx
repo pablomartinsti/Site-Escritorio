@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Button, { ButtonGroup } from '../../../components/Button';
 import AnimatedInView from '../../../components/AnimatedInView';
-import bannerMain from '../../../assets/contadora-escritorio-de-contabilidade-consultoria.webp';
+
 import { HeroSection } from '../styles';
 import { scrollToId } from '../../../utils/scroll';
 
@@ -9,7 +9,14 @@ export default function Hero() {
   return (
     <HeroSection as="section" aria-labelledby="hero-title">
       <picture className="hero-bg" aria-hidden="true">
-        <img src={bannerMain} alt="" fetchPriority="high" decoding="async" width="1280" height="720" />
+        <img
+          src="/contadora-escritorio-de-contabilidade-consultoria.webp"
+          alt=""
+          width="1280"
+          height="720"
+          fetchPriority="high"
+          decoding="async"
+        />
       </picture>
 
       <div className="hero-content">
