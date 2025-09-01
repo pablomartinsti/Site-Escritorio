@@ -17,8 +17,6 @@ export default function Hero() {
          (max-width: 992px) 768px,
          1200px"
           alt="Contabilidade em Uberlândia - MG"
-          width={1200}
-          height={675}
           fetchPriority="high"
           loading="eager"
           decoding="async"

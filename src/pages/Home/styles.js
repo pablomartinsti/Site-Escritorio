@@ -30,6 +30,13 @@ export const HeroSection = styled.section`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: left center;
+  }
+
+  @media (max-width: 768px) {
+    .hero-bg img {
+      object-position: right top;
+    }
   }
 
   /* overlay escuro */
