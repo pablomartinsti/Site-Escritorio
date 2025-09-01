@@ -6,7 +6,6 @@ import { Container } from './styles';
 const defaultImage = 'URL_DA_IMAGEM_PADRÃO';
 
 function Card({ title, description, img, alt, link, ctaLabel, buttonVariant, buttonProps }) {
-  const src = img || defaultImage;
   const aria = `Saiba mais sobre ${title}`;
 
   const isInternal = typeof link === 'string' && /^\/(?!\/)/.test(link);
@@ -21,9 +20,10 @@ function Card({ title, description, img, alt, link, ctaLabel, buttonVariant, but
     <Container>
       <article className="card">
         <picture>
-          <source srcSet={img?.small} media="(max-width: 600px)" />
+          {typeof img === 'object' && img.small && <source srcSet={img.small} media="(max-width: 600px)" />}
+          {typeof img === 'object' && img.medium && <source srcSet={img.medium} media="(min-width: 601px)" />}
           <img
-            src={img?.large || src}
+            src={typeof img === 'string' ? img : img.medium || img.small || defaultImage}
             alt={alt || title || 'Imagem do serviço'}
             width={400}
             height={250}
@@ -58,7 +58,13 @@ function Card({ title, description, img, alt, link, ctaLabel, buttonVariant, but
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  img: PropTypes.string,
+  img: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape({
+      small: PropTypes.string,
+      medium: PropTypes.string
+    })
+  ]),
   alt: PropTypes.string,
   link: PropTypes.string,
   ctaLabel: PropTypes.string,
