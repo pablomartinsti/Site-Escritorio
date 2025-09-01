@@ -10,12 +10,19 @@ export default function Hero() {
     <HeroSection as="section" aria-labelledby="hero-title">
       <picture className="hero-bg" aria-hidden="true">
         <img
-          src="/contadora-escritorio-de-contabilidade-consultoria.webp"
+          src="/contadora-1200.webp"
+          srcSet="/contadora-480.webp 480w,
+          /contadora-768.webp 768w,
+          /contadora-1200.webp 1200w"
+          sizes="(max-width: 600px) 480px,
+         (max-width: 992px) 768px,
+         1200px"
           alt=""
-          width="1280"
-          height="720"
+          width={1200}
+          height={675}
           fetchPriority="high"
           decoding="async"
+          style={{ objectFit: 'cover' }}
         />
       </picture>
 

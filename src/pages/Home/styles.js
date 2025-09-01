@@ -8,7 +8,8 @@ export const Container = styled.main``;
 export const HeroSection = styled.section`
   position: relative;
   height: 100vh;
-  min-height: 500px;
+  height: 100vh;
+  height: 100svh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -45,6 +46,7 @@ export const HeroSection = styled.section`
   .hero-content {
     width: 100%;
     min-height: calc(100vh - 112px);
+    min-height: calc(100svh - 112px);
     margin: 0 auto;
     padding: 0 1.5rem;
     display: flex;
@@ -55,7 +57,8 @@ export const HeroSection = styled.section`
     z-index: 1;
 
     @media (max-width: 820px) {
-      height: calc(100vh - 250px);
+      min-height: calc(100vh - 250px);
+      min-height: calc(100svh - 250px);
     }
   }
 
