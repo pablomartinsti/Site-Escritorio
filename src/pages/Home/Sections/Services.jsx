@@ -1,12 +1,6 @@
 import Card from '../../../components/Card';
 import AnimatedInView from '../../../components/AnimatedInView';
 import { ServiceSection } from '../styles';
-import ImgAbertura from '../../../assets/abertura-empresas.webp';
-import ImgCertificado from '../../../assets/certificado-digital-a1.webp';
-import ImgConsultoria from '../../../assets/consultoria-contabil.webp';
-import ImgContabil from '../../../assets/contabilidade-mensal.webp';
-import ImgIR from '../../../assets/imposto-de-renda.webp';
-import ImgTributario from '../../../assets/planejamento-tributario.webp';
 
 export default function Services() {
   const servicesData = [
@@ -14,7 +8,10 @@ export default function Services() {
       title: 'Abertura de Empresas',
       description:
         'Legalize sua empresa em Uberlândia com total suporte em documentação, registro e orientação para evitar burocracias.',
-      img: ImgAbertura,
+      img: {
+        small: '/assets/abertura-empresas-300.webp',
+        medium: '/assets/abertura-empresas-600.webp'
+      },
       link: '/servicos/abertura-de-empresas',
       motion: 'fadeLeft'
     },
@@ -22,7 +19,10 @@ export default function Services() {
       title: 'Contabilidade Mensal',
       description:
         'Mantenha impostos e obrigações no prazo, com escrituração confiável e relatórios claros para decisões seguras.',
-      img: ImgContabil,
+      img: {
+        small: '/assets/contabilidade-mensal-300.webp',
+        medium: '/assets/contabilidade-mensal-600.webp'
+      },
       link: '/servicos/contabilidade-mensal',
       motion: 'fadeDown'
     },
@@ -30,7 +30,10 @@ export default function Services() {
       title: 'Planejamento Tributário',
       description:
         'Reduza a carga tributária com simulações e execução seguras, alinhadas à lei, para aumentar a eficiência do seu negócio.',
-      img: ImgTributario,
+      img: {
+        small: '/assets/planejamento-tributario-300.webp',
+        medium: '/assets/planejamento-tributario-600.webp'
+      },
       link: '/servicos/planejamento-tributario',
       motion: 'fadeRight'
     },
@@ -38,7 +41,10 @@ export default function Services() {
       title: 'Consultoria Contábil',
       description:
         'Analisamos números e indicadores, estruturando planejamento financeiro e contábil para decisões mais seguras.',
-      img: ImgConsultoria,
+      img: {
+        small: '/assets/consultoria-contabil-300.webp',
+        medium: '/assets/consultoria-contabil-600.webp'
+      },
       link: '/servicos/consultoria-contabil',
       motion: 'fadeLeft'
     },
@@ -46,7 +52,10 @@ export default function Services() {
       title: 'Imposto de Renda',
       description:
         'Declaração de IRPF e rotinas de PJ com revisão técnica, aproveitando deduções legais e acompanhando de restituição.',
-      img: ImgIR,
+      img: {
+        small: '/assets/imposto-de-renda-300.webp',
+        medium: '/assets/imposto-de-renda-600.webp'
+      },
       link: '/servicos/imposto-de-renda',
       motion: 'fadeUp'
     },
@@ -54,7 +63,10 @@ export default function Services() {
       title: 'Certificado Digital',
       description:
         'Emita seu certificado digital A1 100% online, com validação por vídeo via CNH digital e configuração para NF-e e e-CAC.',
-      img: ImgCertificado,
+      img: {
+        small: '/assets/certificado-digital-a1-300.webp',
+        medium: '/assets/certificado-digital-a1-600.webp'
+      },
       link: '/servicos/certificado-digital',
       motion: 'fadeRight'
     }

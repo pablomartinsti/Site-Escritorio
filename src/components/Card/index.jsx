@@ -20,14 +20,17 @@ function Card({ title, description, img, alt, link, ctaLabel, buttonVariant, but
   return (
     <Container>
       <article className="card">
-        <img
-          src={src}
-          alt={alt || title || 'Imagem do serviço'}
-          width={400}
-          height={250}
-          loading="lazy"
-          decoding="async"
-        />
+        <picture>
+          <source srcSet={img?.small} media="(max-width: 600px)" />
+          <img
+            src={img?.large || src}
+            alt={alt || title || 'Imagem do serviço'}
+            width={400}
+            height={250}
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
 
         <div className="descricao">
           <h3 title={title}>{title}</h3>
