@@ -20,8 +20,17 @@ function Card({ title, description, img, alt, link, ctaLabel, buttonVariant, but
     <Container>
       <article className="card">
         <picture>
-          {typeof img === 'object' && img.small && <source srcSet={img.small} media="(max-width: 600px)" />}
-          {typeof img === 'object' && img.medium && <source srcSet={img.medium} media="(min-width: 601px)" />}
+          {/* versão menor para telas até 600px */}
+          {typeof img === 'object' && img.small && (
+            <source srcSet={img.small} media="(max-width: 300px)" type="image/webp" />
+          )}
+
+          {/* versão média para telas acima de 600px */}
+          {typeof img === 'object' && img.medium && (
+            <source srcSet={img.medium} media="(min-width: 600px)" type="image/webp" />
+          )}
+
+          {/* fallback */}
           <img
             src={typeof img === 'string' ? img : img.medium || img.small || defaultImage}
             alt={alt || title || 'Imagem do serviço'}
@@ -29,6 +38,7 @@ function Card({ title, description, img, alt, link, ctaLabel, buttonVariant, but
             height={250}
             loading="lazy"
             decoding="async"
+            style={{ objectFit: 'cover' }}
           />
         </picture>
 

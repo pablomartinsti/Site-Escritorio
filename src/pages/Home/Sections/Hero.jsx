@@ -11,15 +11,16 @@ export default function Hero() {
         <img
           src="/assets/contadora-1200.webp"
           srcSet="/assets/contadora-480.webp 480w,
-            /assets/contadora-768.webp 768w,
-            /assets/contadora-1200.webp 1200w"
+          /assets/contadora-768.webp 768w,
+          /assets/contadora-1200.webp 1200w"
           sizes="(max-width: 600px) 480px,
-           (max-width: 992px) 768px,
-           1200px"
-          alt=""
+         (max-width: 992px) 768px,
+         1200px"
+          alt="Contabilidade em Uberlândia - MG"
           width={1200}
           height={675}
           fetchPriority="high"
+          loading="eager"
           decoding="async"
           style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
