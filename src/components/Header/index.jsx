@@ -7,7 +7,6 @@ import { GoChevronRight } from 'react-icons/go';
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
 import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
-import logo from '../../assets/martir-assessoria-contabil.webp';
 import colors from '../../styles/colors';
 import { Container, HeaderTop, HeaderBottom, Logo, HamburgerIcon, Nav, DrawerContent } from './styles';
 
@@ -105,7 +104,12 @@ function Header() {
       <HeaderBottom isScrolled={isScrolled}>
         <section>
           <Link to="/" aria-label="Ir para a página inicial">
-            <Logo src={logo} alt="Martir Assessoria Contábil" width="160" height="48" />
+            <Logo
+              src="/assets/martir-assessoria-contabil.webp"
+              alt="Martir Assessoria Contábil"
+              width="160"
+              height="48"
+            />
           </Link>
 
           <HamburgerIcon onClick={() => toggleDrawer(true)} aria-label="Abrir menu">

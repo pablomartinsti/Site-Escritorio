@@ -71,6 +71,7 @@ export default function Services() {
       motion: 'fadeRight'
     }
   ];
+
   return (
     <ServiceSection as="section" id="services" aria-labelledby="servicos-titulo">
       <AnimatedInView as="h2" id="servicos-titulo" className="service-title" variant="fadeDown">

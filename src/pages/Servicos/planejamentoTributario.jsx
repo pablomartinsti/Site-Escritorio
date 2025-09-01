@@ -2,7 +2,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useMemo } from 'react';
 import ServicePage from '../../components/ServicePage';
-import ImgTributario from '../../assets/planejamento-tributario-600.webp';
 
 /* ===== SVGs decorativos (aria-hidden) ===== */
 const SvgRapidez = (props) => (
@@ -84,7 +83,10 @@ export default function PlanejamentoTributarioServico() {
         title="Planejamento Tributário para Empresas em Uberlândia"
         subtitle="Planejamento Tributário"
         description="Avaliação fiscal, simulações e execução com segurança e clareza."
-        heroImage={ImgTributario}
+        heroImage={{
+          small: '/assets/planejamento-tributario-300.webp',
+          medium: '/assets/planejamento-tributario-600.webp'
+        }}
         heroAlt="Planejamento tributário para empresas em Uberlândia, Minas Gerais"
         aboutTitle="Como encontramos economia legal"
         aboutText="Mapeamos suas operações, simulamos cenários com Simples, Lucro Presumido e Lucro Real, revisamos CNAE e oportunidades de crédito e recomendamos a melhor estrutura. Implementamos as mudanças e monitoramos os resultados."

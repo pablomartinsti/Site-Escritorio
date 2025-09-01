@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Container } from './styles';
-import logo from '../../assets/martir-assessoria-contabil.webp';
+
 import { FaInstagram, FaMapMarkerAlt, FaFacebook, FaLinkedin, FaClock } from 'react-icons/fa';
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai';
 
@@ -92,7 +92,7 @@ function Footer() {
         </div>
 
         <div className="logo">
-          <img src={logo} alt="Martir Assessoria Contábil" width="160" height="48" />
+          <img src="/assets/martir-assessoria-contabil.webp" alt="Martir Assessoria Contábil" width="160" height="48" />
           <p>
             Contabilidade com Propósito
             <br /> e Excelência

@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useMemo } from 'react';
 import ServicePage from '../../components/ServicePage';
-import ImgAbertura from '../../assets/abertura-empresas-600.webp';
 
 const SvgRapidez = (props) => (
   <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false" role="presentation" {...props}>
@@ -87,7 +86,10 @@ export default function AberturaEmpresa() {
         title="Abertura de Empresa em Uberlândia – MG"
         subtitle="Abertura de Empresa"
         description="Abertura simplificada rapidez, segurança e acompanhamento."
-        heroImage={ImgAbertura}
+        heroImage={{
+          small: '/assets/abertura-empresas-300.webp',
+          medium: '/assets/abertura-empresas-600.webp'
+        }}
         heroAlt="Abertura e legalização de empresas em Uberlândia, Minas Gerais"
         heroAsBackground={true}
         aboutTitle="Como ajudamos você a abrir sua empresa do jeito certo"

@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import aboutMartirImg from '../../assets/sobre-martir-assessoria-contabil-uberlandia.webp';
 import colors from '../../styles/colors';
 
 export const Container = styled.main``;
@@ -157,7 +156,7 @@ export const ServiceSection = styled.section`
 export const AboutSection = styled.section`
   .parallax-bg {
     position: relative;
-    background-image: url(${aboutMartirImg});
+    background-image: url('/assets/sobre-martir-assessoria-contabil-uberlandia.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -319,7 +318,7 @@ export const DifferentialSection = styled.section`
 
 export const FeedbackSection = styled.section`
   position: relative;
-  background-image: url(${aboutMartirImg});
+  background-image: url('/assets/sobre-martir-assessoria-contabil-uberlandia.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

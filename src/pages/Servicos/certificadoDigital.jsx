@@ -2,7 +2,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useMemo } from 'react';
 import ServicePage from '../../components/ServicePage';
-import ImgCertificado from '../../assets/certificado-digital-a1-600.webp';
 
 /* ===== SVGs decorativos (aria-hidden) ===== */
 const SvgRapidez = (props) => (
@@ -80,7 +79,10 @@ export default function CertificadoDigital() {
         title="Certificado Digital A1 em Uberlândia"
         subtitle="Certificado Digital A1"
         description="Emissão 100% online, validação por vídeo e suporte até a instalação."
-        heroImage={ImgCertificado}
+        heroImage={{
+          small: '/assets/certificado-digital-a1-300.webp',
+          medium: '/assets/certificado-digital-a1-600.webp'
+        }}
         heroAlt="Emissão de certificado digital A1 online em Uberlândia, Minas Gerais"
         aboutTitle="Como funciona a emissão online"
         aboutText="Fazemos a emissão do certificado digital A1 de forma 100% online. Você agenda, valida por videoconferência usando sua CNH digital e recebe o arquivo pronto para uso. Também configuramos o A1 nos sistemas que você utiliza."

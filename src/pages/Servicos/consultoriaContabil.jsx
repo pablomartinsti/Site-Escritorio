@@ -2,7 +2,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useMemo } from 'react';
 import ServicePage from '../../components/ServicePage';
-import ImgConsultoria from '../../assets/consultoria-contabil-600.webp';
 
 /* ===== SVGs decorativos (aria-hidden) ===== */
 const SvgRapidez = (props) => (
@@ -83,7 +82,10 @@ export default function ConsultoriaAssessoriaContabil() {
         title="Consultoria Contábil para Empresas em Uberlândia"
         subtitle="Consultoria Contábil"
         description="Relatórios compreensíveis, reuniões periódicas e suporte para decisões."
-        heroImage={ImgConsultoria}
+        heroImage={{
+          small: '/assets/consultoria-contabil-300.webp',
+          medium: '/assets/consultoria-contabil-600.webp'
+        }}
         heroAlt="Consultoria e assessoria contábil para empresas em Uberlândia, Minas Gerais"
         aboutTitle="Como ajudamos na gestão contábil"
         aboutText="Transformamos dados contábeis em decisões: analisamos balancetes e DRE, construímos indicadores e cenários e orientamos enquadramento, custos, precificação e rotinas — com suporte consultivo contínuo."

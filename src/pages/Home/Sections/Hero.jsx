@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Button, { ButtonGroup } from '../../../components/Button';
 import AnimatedInView from '../../../components/AnimatedInView';
-
 import { HeroSection } from '../styles';
 import { scrollToId } from '../../../utils/scroll';
 
@@ -10,19 +9,19 @@ export default function Hero() {
     <HeroSection as="section" aria-labelledby="hero-title">
       <picture className="hero-bg" aria-hidden="true">
         <img
-          src="/contadora-1200.webp"
-          srcSet="/contadora-480.webp 480w,
-          /contadora-768.webp 768w,
-          /contadora-1200.webp 1200w"
+          src="/assets/contadora-1200.webp"
+          srcSet="/assets/contadora-480.webp 480w,
+            /assets/contadora-768.webp 768w,
+            /assets/contadora-1200.webp 1200w"
           sizes="(max-width: 600px) 480px,
-         (max-width: 992px) 768px,
-         1200px"
+           (max-width: 992px) 768px,
+           1200px"
           alt=""
           width={1200}
           height={675}
           fetchPriority="high"
           decoding="async"
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
       </picture>
 

@@ -2,7 +2,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useMemo } from 'react';
 import ServicePage from '../../components/ServicePage';
-import ImgIR from '../../assets/imposto-de-renda-600.webp';
 
 /* ===== SVGs decorativos (aria-hidden) ===== */
 const SvgRapidez = (props) => (
@@ -81,7 +80,10 @@ export default function ImpostoDeRendaServico() {
         title="Imposto de Renda em Uberlândia"
         subtitle="Imposto de Renda"
         description="Otimizamos deduções e evitamos erros para você pagar o justo, com tranquilidade."
-        heroImage={ImgIR}
+        heroImage={{
+          small: '/assets/imposto-de-renda-300.webp',
+          medium: '/assets/imposto-de-renda-600.webp'
+        }}
         heroAlt="Declaração de Imposto de Renda em Uberlândia, Minas Gerais"
         aboutTitle="Como conduzimos sua declaração"
         aboutText="Organizamos os documentos, preenchemos e revisamos sua declaração de Imposto de Renda. Em seguida, enviamos com recibo e acompanhamos eventuais pendências e a restituição."

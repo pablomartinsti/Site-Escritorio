@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useMemo } from 'react';
 import ServicePage from '../../components/ServicePage';
-import ImgContabil from '../../assets/contabilidade-mensal-600.webp';
 
 const SvgRapidez = (props) => (
   <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false" role="presentation" {...props}>
@@ -78,7 +77,10 @@ export default function EscrituracaoContabilFiscal() {
         title="Contabilidade Mensal para Empresas em Uberlândia"
         subtitle="Contabilidade Mensal"
         description="Conformidade garantida, atendimento próximo e transparência."
-        heroImage={ImgContabil}
+        heroImage={{
+          small: '/assets/contabilidade-mensal-300.webp',
+          medium: '/assets/abertura-empresas-600.webp'
+        }}
         heroAlt="Contabilidade mensal e rotina fiscal para empresas em Uberlândia, Minas Gerais"
         aboutTitle="Como mantemos sua empresa em dia"
         aboutText="Cuidamos da rotina contábil e fiscal da sua empresa: lançamentos, apuração de impostos e entrega das obrigações acessórias dentro dos prazos. Você acompanha tudo por relatórios claros para decidir com mais segurança."

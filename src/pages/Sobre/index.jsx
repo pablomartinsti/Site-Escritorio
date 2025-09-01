@@ -2,7 +2,6 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Container, Hero, Section } from './styles';
-import img from '../../assets/sobre-martir-assessoria-contabil.webp';
 import Cta from '../../components/Formulario';
 import AnimatedInView from '../../components/AnimatedInView';
 import Button from '../../components/Button';
@@ -36,7 +35,7 @@ export default function Sobre() {
               className="box-conteudo"
               variant="fadeDown"
               viewport={{ once: true, amount: 0.2 }}
-              src={img}
+              src="/assets/sobre-martir-assessoria-contabil.webp"
               alt="Equipe da Martir Assessoria Contábil"
               loading="lazy"
               decoding="async"
