@@ -20,6 +20,8 @@ export default function Hero() {
           fetchPriority="high"
           loading="eager"
           decoding="async"
+          width="1200"
+          height="800"
           style={{ objectFit: 'cover', width: '100%', height: '100%' }}
         />
       </picture>

@@ -172,7 +172,12 @@ export const AboutSection = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1024px) {
+      background-attachment: scroll;
+    }
   }
+
   .about-img {
     background: ${colors.blueOverlay};
     padding: 6rem 1.5rem;
@@ -331,6 +336,10 @@ export const FeedbackSection = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   padding: 6rem 1.5rem;
+
+  @media (max-width: 1024px) {
+    background-attachment: scroll;
+  }
 
   &::before {
     content: '';

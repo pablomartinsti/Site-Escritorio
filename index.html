@@ -11,7 +11,11 @@
     <!-- Favicon via /public -->
     <link rel="icon" type="image/png" href="/Logo.png" />
 
-    <!-- Preload da imagem LCP (mova o arquivo para /public) -->
+    <!-- Preload das fontes críticas -->
+    <link rel="preload" href="/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin />
+
+    <!-- Preload da imagem LCP -->
     <link
       rel="preload"
       as="image"
@@ -27,6 +31,7 @@
       if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
     </script>
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
