@@ -73,7 +73,15 @@ export default function ServicePage({
               variant="fadeDown"
               viewport={{ once: true, amount: 0.2 }}
             >
-              <img src={heroImage} alt={heroAlt} width={800} height={560} loading="lazy" decoding="async" />
+              <img
+                src={heroImage.medium}
+                srcSet={`${heroImage.small} 300w, ${heroImage.medium} 600w`}
+                alt={heroAlt}
+                width={800}
+                height={560}
+                loading="lazy"
+                decoding="async"
+              />
             </AnimatedInView>
           </Container>
         </Section>
@@ -179,7 +187,14 @@ ServicePage.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  heroImage: PropTypes.string.isRequired,
+  heroImage: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.shape({
+      small: PropTypes.string,
+      medium: PropTypes.string
+    })
+  ]).isRequired,
+
   heroAlt: PropTypes.string.isRequired,
   aboutTitle: PropTypes.string,
   aboutText: PropTypes.string,
