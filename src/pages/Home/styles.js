@@ -8,15 +8,11 @@ export const HeroSection = styled.section`
   position: relative;
   height: 100vh;
   height: 100vh;
-  height: 100svh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   color: ${colors.white};
   width: 100%;
-  @media (max-width: 1024px) {
-    height: auto;
-  }
 
   /* imagem real no DOM */
   .hero-bg {
