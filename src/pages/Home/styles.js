@@ -48,7 +48,7 @@ export const HeroSection = styled.section`
   .hero-content {
     width: 100%;
     min-height: calc(100vh - 112px);
-    min-height: calc(100svh - 112px);
+
     margin: 0 auto;
     padding: 0 1.5rem;
     display: flex;
@@ -57,11 +57,6 @@ export const HeroSection = styled.section`
     max-width: 1200px;
     position: relative;
     z-index: 1;
-
-    @media (max-width: 820px) {
-      min-height: calc(100vh - 250px);
-      min-height: calc(100svh - 250px);
-    }
   }
 
   .hero-text {
