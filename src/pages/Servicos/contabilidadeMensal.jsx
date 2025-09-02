@@ -79,7 +79,7 @@ export default function EscrituracaoContabilFiscal() {
         description="Conformidade garantida, atendimento próximo e transparência."
         heroImage={{
           small: '/assets/contabilidade-mensal-300.webp',
-          medium: '/assets/abertura-empresas-600.webp'
+          medium: '/assets/contabilidade-mensal-600.webp'
         }}
         heroAlt="Contabilidade mensal e rotina fiscal para empresas em Uberlândia, Minas Gerais"
         aboutTitle="Como mantemos sua empresa em dia"
