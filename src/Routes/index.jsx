@@ -20,6 +20,10 @@ const PlanejamentoTributarioServico = lazy(() => import('../pages/Servicos/plane
 const BlogPage = lazy(() => import('../pages/Blog'));
 const BlogPost = lazy(() => import('../pages/BlogPost'));
 
+const PoliticaPrivacidade = lazy(() => import('../pages/PoliticaPrivacidade'));
+const TermosServico = lazy(() => import('../pages/TermosServico'));
+const ExclusaoDados = lazy(() => import('../pages/ExclusaoDados'));
+
 // Footer e WhatsAppFloat LAZY
 const Footer = lazy(() => import('../components/Footer'));
 const WhatsAppFloat = lazy(() => import('../components/WhatsAppFloat'));
@@ -53,6 +57,10 @@ export default function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
 
+          <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
+          <Route path="/termos-de-servico" element={<TermosServico />} />
+          <Route path="/exclusao-de-dados" element={<ExclusaoDados />} />
+
           <Route
             path="/servico/abertura-de-empresa"
             element={<Navigate to="/servicos/abertura-de-empresas" replace />}
@@ -62,7 +70,6 @@ export default function App() {
         </Routes>
       </Suspense>
 
-      {/* Carregar fora do fluxo principal */}
       <Suspense fallback={null}>
         <WhatsAppFloat
           phone="5534997624502"
