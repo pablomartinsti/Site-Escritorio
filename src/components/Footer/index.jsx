@@ -24,8 +24,8 @@ const solucoes = [
 const contatos = [
   {
     icon: <AiOutlinePhone size={20} />,
-    texto: '(34) 99657-1156',
-    link: 'tel:+5534996571156'
+    texto: '(34) 99762-4502',
+    link: 'tel:+5534997624502'
   },
   {
     icon: <AiOutlineMail size={20} />,
@@ -39,7 +39,7 @@ const contatos = [
   },
   {
     icon: <FaClock size={20} />,
-    texto: `Segunda a Sexta: 08h às 18h \nSábado: 08h às 12h`,
+    texto: `Segunda a Sexta: 08:00h às 17:30h `,
     link: '#'
   }
 ];

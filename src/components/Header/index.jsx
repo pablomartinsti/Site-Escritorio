@@ -69,9 +69,9 @@ function Header() {
         <section>
           <div className="box-contato">
             <div className="contato">
-              <a href="tel:+5534996571156" aria-label="Ligar para (34) 99657-1156">
+              <a href="tel:+5534997624502" aria-label="Ligar para (34) 99762-4502">
                 <AiOutlinePhone size="20" />
-                <p>(34) 99657-1156</p>
+                <p>(34) 99762-4502</p>
               </a>
             </div>
             <div className="contato">

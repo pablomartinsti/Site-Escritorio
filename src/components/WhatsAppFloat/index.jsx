@@ -10,7 +10,7 @@ export default function WhatsAppFloat({
   autoHideMs = 8000
 }) {
   const [showBubble, setShowBubble] = useState(showBubbleInitially);
-  const url = `https://wa.me/5534996571156?text=${encodeURIComponent(message)}`;
+  const url = `https://wa.me/5534997624502?text=${encodeURIComponent(message)}`;
 
   useEffect(() => {
     if (!showBubbleInitially) return;
