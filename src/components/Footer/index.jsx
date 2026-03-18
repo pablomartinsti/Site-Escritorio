@@ -106,7 +106,12 @@ function Footer() {
             >
               <FaLinkedin size={20} />
             </a>
-            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/martirassessoria/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
               <FaFacebook size={20} />
             </a>
             <a
