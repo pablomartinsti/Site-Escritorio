@@ -93,10 +93,7 @@ function Footer() {
 
         <div className="logo">
           <img src="/assets/martir-contabil.webp" alt="Martir Contábil" width="160" height="48" />
-          <p>
-            Contabilidade com Propósito
-            <br /> e Excelência
-          </p>
+          <p>Acesse nossas redes socias</p>
           <div className="footer-social" aria-label="Redes sociais">
             <a
               href="https://www.linkedin.com/company/martir-contabil/"
