@@ -7,7 +7,7 @@ function Contato() {
   return (
     <Container as="main" role="main">
       <Helmet>
-        <title>Fale com a Martir Assessoria Contábil – Consultoria gratuita</title>
+        <title>Fale com a Martir Contábil – Consultoria gratuita</title>
         <meta
           name="description"
           content="Entre em contato para tirar dúvidas e solicitar sua consultoria gratuita. Atendemos Uberlândia e todo o Brasil com soluções contábeis."
@@ -41,7 +41,7 @@ function Contato() {
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
-        title="Mapa - Martir Assessoria Contábil"
+        title="Mapa - Martir Contábil"
       />
 
       <News />

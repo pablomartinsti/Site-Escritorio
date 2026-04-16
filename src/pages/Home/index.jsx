@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <Container as="main" id="conteudo-principal" role="main">
       <Helmet>
-        <title>Martir Assessoria Contábil – Contabilidade em Uberlândia</title>
+        <title>Martir Contábil – Contabilidade em Uberlândia</title>
         <meta
           name="description"
-          content="Assessoria contábil completa em Uberlândia. Cuidamos da abertura de empresas, gestão fiscal, contabilidade e consultoria para seu negócio crescer."
+          content="Martir contábil completa em Uberlândia. Cuidamos da abertura de empresas, gestão fiscal, contabilidade e consultoria para seu negócio crescer."
         />
         <link rel="canonical" href="https://martircontabil.com.br/" />
       </Helmet>

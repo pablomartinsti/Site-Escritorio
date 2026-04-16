@@ -40,7 +40,7 @@ export default function Differentials() {
   return (
     <DifferentialSection as="section" id="Differential" aria-labelledby="diff-titulo">
       <AnimatedInView as="h2" id="diff-titulo" variant="fadeDown">
-        Por que escolher a Martir Assessoria Contábil?
+        Por que escolher a Martir Contábil?
       </AnimatedInView>
 
       <div className="Differential-cards" role="list">

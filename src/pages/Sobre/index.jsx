@@ -11,10 +11,10 @@ export default function Sobre() {
   return (
     <Container as="main" role="main">
       <Helmet>
-        <title>Sobre a Martir Assessoria Contábil – Nossa história e propósito</title>
+        <title>Sobre a Martir Contábil – Nossa história e propósito</title>
         <meta
           name="description"
-          content="Conheça a história da Martir Assessoria Contábil. Atendimento humano, soluções contábeis estratégicas e foco no crescimento sustentável de empresas em Uberlândia e região. "
+          content="Conheça a história da Martir Contábil. Atendimento humano, soluções contábeis estratégicas e foco no crescimento sustentável de empresas em Uberlândia e região. "
         />
         <link rel="canonical" href="https://martircontabil.com.br/sobre" />
       </Helmet>
@@ -35,8 +35,8 @@ export default function Sobre() {
               className="box-conteudo"
               variant="fadeDown"
               viewport={{ once: true, amount: 0.2 }}
-              src="/assets/sobre-martir-assessoria-contabil.webp"
-              alt="Equipe da Martir Assessoria Contábil"
+              src="/assets/sobre-martir-contabil.webp"
+              alt="Equipe da Martir Contábil"
               loading="lazy"
               decoding="async"
             />
@@ -44,9 +44,9 @@ export default function Sobre() {
             <AnimatedInView as="div" className="box-conteudo" variant="fadeUp" viewport={{ once: true, amount: 0.2 }}>
               <h2 id="sobre-historia-heading">Compromisso com a sua tranquilidade financeira</h2>
               <p>
-                Na <strong>Martir Assessoria Contábil</strong>, nosso propósito vai muito além de cuidar de números: nós
-                ajudamos empresas e pessoas físicas a conquistarem{' '}
-                <strong>segurança, organização e conformidade fiscal</strong> para crescerem de forma sustentável.
+                Na <strong>Martir Contábil</strong>, nosso propósito vai muito além de cuidar de números: nós ajudamos
+                empresas e pessoas físicas a conquistarem <strong>segurança, organização e conformidade fiscal</strong>{' '}
+                para crescerem de forma sustentável.
               </p>
               <p>
                 Mesmo com apenas 2 anos de atuação no mercado, nossa fundadora e contadora possui{' '}

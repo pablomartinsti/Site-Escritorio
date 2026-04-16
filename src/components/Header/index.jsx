@@ -84,7 +84,7 @@ function Header() {
 
           <div className="box-icon" aria-label="Redes sociais">
             <a
-              href="https://www.linkedin.com/company/martir-assessoria-cont%C3%A1bil/"
+              href="https://www.linkedin.com/company/martir-contabil/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -92,7 +92,7 @@ function Header() {
               <FaLinkedin size={20} />
             </a>
             <a
-              href="https://www.facebook.com/martirassessoria/"
+              href="https://www.facebook.com/martircontabil/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -100,7 +100,7 @@ function Header() {
               <FaFacebook size={20} />
             </a>
             <a
-              href="https://www.instagram.com/martirassessoria/"
+              href="https://www.instagram.com/martircontabil/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -114,12 +114,7 @@ function Header() {
       <HeaderBottom isScrolled={isScrolled}>
         <section>
           <Link to="/" aria-label="Ir para a página inicial">
-            <Logo
-              src="/assets/martir-assessoria-contabil.webp"
-              alt="Martir Assessoria Contábil"
-              width="160"
-              height="48"
-            />
+            <Logo src="/assets/martir-contabil.webp" alt="Martir Contábil" width="160" height="48" />
           </Link>
 
           <HamburgerIcon onClick={() => toggleDrawer(true)} aria-label="Abrir menu">

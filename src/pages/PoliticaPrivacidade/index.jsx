@@ -4,8 +4,7 @@ export default function PoliticaPrivacidade() {
       <h1>Política de Privacidade</h1>
 
       <p>
-        A Martir Assessoria Contábil respeita a privacidade dos usuários e protege os dados pessoais coletados em seus
-        sistemas.
+        A Martir Contábil respeita a privacidade dos usuários e protege os dados pessoais coletados em seus sistemas.
       </p>
 
       <h2>Dados coletados</h2>

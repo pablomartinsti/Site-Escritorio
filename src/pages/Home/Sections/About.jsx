@@ -11,11 +11,11 @@ export default function About() {
         <div className="about-img">
           <article className="about-content">
             <AnimatedInView as="h2" id="sobre-titulo" variant="fadeDown">
-              Sobre a Martir Assessoria Contábil
+              Sobre a Martir Contábil
             </AnimatedInView>
 
             <AnimatedInView as="p" variant="fadeUp">
-              A Martir Assessoria Contábil nasceu para oferecer{' '}
+              A Martir Contábil nasceu para oferecer{' '}
               <span className="about-highlight">contabilidade com propósito e excelência</span> em Uberlândia e região.
             </AnimatedInView>
 

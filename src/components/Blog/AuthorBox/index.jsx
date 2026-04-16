@@ -5,7 +5,7 @@ export default function AuthorBox() {
     <Card>
       <Box>
         <Title>Sobre o autor</Title>
-        <Text>Equipe Martir Assessoria Contábil — CRC: 000000/MG</Text>
+        <Text>Equipe Martir Contábil</Text>
       </Box>
     </Card>
   );

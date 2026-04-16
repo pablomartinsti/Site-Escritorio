@@ -3,9 +3,7 @@ export default function TermosServico() {
     <div style={{ maxWidth: '900px', margin: '60px auto', padding: '20px', lineHeight: 1.7 }}>
       <h1>Termos de Serviço</h1>
 
-      <p>
-        Ao utilizar os serviços da Martir Assessoria Contábil, o usuário concorda com os termos descritos nesta página.
-      </p>
+      <p>Ao utilizar os serviços da Martir Contábil, o usuário concorda com os termos descritos nesta página.</p>
 
       <h2>Uso do site</h2>
       <p>O usuário concorda em utilizar o site de forma legal e ética.</p>

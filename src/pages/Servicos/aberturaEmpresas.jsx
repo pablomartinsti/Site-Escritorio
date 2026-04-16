@@ -75,7 +75,7 @@ export default function AberturaEmpresa() {
   return (
     <>
       <Helmet>
-        <title>Abertura de Empresa em Uberlândia – Martir Assessoria Contábil</title>
+        <title>Abertura de Empresa em Uberlândia – Martir Contábil</title>
         <meta
           name="description"
           content="Abertura e legalização de empresas em Uberlândia e região. Do CNPJ às licenças, cuidamos de todo o processo com agilidade e segurança."
@@ -93,7 +93,7 @@ export default function AberturaEmpresa() {
         heroAlt="Abertura e legalização de empresas em Uberlândia, Minas Gerais"
         heroAsBackground={true}
         aboutTitle="Como ajudamos você a abrir sua empresa do jeito certo"
-        aboutText="A Martir Assessoria Contábil realiza abertura e legalização de empresas em Uberlândia, Triângulo Mineiro e outras cidades de Minas Gerais.
+        aboutText="A Martir Contábil realiza abertura e legalização de empresas em Uberlândia, Triângulo Mineiro e outras cidades de Minas Gerais.
         Cuidamos de cada etapa: registro na Junta Comercial de Minas Gerais (JUCEMG), emissão do CNPJ, inscrições fiscais e obtenção de alvarás e licenças.
         Tudo para que seu negócio comece sem burocracia, com segurança jurídica e a melhor estratégia tributária."
         bullets={[

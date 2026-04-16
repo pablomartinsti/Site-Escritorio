@@ -6,8 +6,8 @@ export const Container = styled.main``;
 export const FormHeader = styled.header`
   position: relative;
   color: ${colors.white};
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url('/assets/sobre-martir-assessoria-contabil-uberlandia.webp');
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/assets/sobre-martir-contabil-uberlandia.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

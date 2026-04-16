@@ -154,7 +154,7 @@ export const ServiceSection = styled.section`
 export const AboutSection = styled.section`
   .parallax-bg {
     position: relative;
-    background-image: url('/assets/sobre-martir-assessoria-contabil-uberlandia.webp');
+    background-image: url('/assets/sobre-martir-contabil-uberlandia.webp');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -274,7 +274,9 @@ export const DifferentialSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s;
+    transition:
+      transform 0.18s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.18s;
   }
   .Differential-card:hover {
     transform: translateY(-6px);
@@ -321,7 +323,7 @@ export const DifferentialSection = styled.section`
 
 export const FeedbackSection = styled.section`
   position: relative;
-  background-image: url('/assets/sobre-martir-assessoria-contabil-uberlandia.webp');
+  background-image: url('/assets/sobre-martir-contabil-uberlandia.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -480,7 +482,9 @@ export const FaqSection = styled.section`
   .faq-answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s;
+    transition:
+      max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+      padding 0.4s;
     color: ${colors.black};
     font-size: 1rem;
   }

@@ -3,7 +3,7 @@ export default function ExclusaoDados() {
     <div style={{ maxWidth: '900px', margin: '60px auto', padding: '20px', lineHeight: 1.7 }}>
       <h1>Exclusão de Dados</h1>
 
-      <p>Usuários podem solicitar a exclusão de seus dados pessoais armazenados pela Martir Assessoria Contábil.</p>
+      <p>Usuários podem solicitar a exclusão de seus dados pessoais armazenados pela Martir Contábil.</p>
 
       <h2>Como solicitar</h2>
       <p>Envie um email para:</p>

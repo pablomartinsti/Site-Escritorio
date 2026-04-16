@@ -92,14 +92,14 @@ function Footer() {
         </div>
 
         <div className="logo">
-          <img src="/assets/martir-assessoria-contabil.webp" alt="Martir Assessoria Contábil" width="160" height="48" />
+          <img src="/assets/martir-contabil.webp" alt="Martir Contábil" width="160" height="48" />
           <p>
             Contabilidade com Propósito
             <br /> e Excelência
           </p>
           <div className="footer-social" aria-label="Redes sociais">
             <a
-              href="https://www.linkedin.com/company/martir-assessoria-cont%C3%A1bil/"
+              href="https://www.linkedin.com/company/martir-contabil/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -107,7 +107,7 @@ function Footer() {
               <FaLinkedin size={20} />
             </a>
             <a
-              href="https://www.facebook.com/martirassessoria/"
+              href="https://www.facebook.com/martircontabil/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -115,7 +115,7 @@ function Footer() {
               <FaFacebook size={20} />
             </a>
             <a
-              href="https://www.instagram.com/martirassessoria/"
+              href="https://www.instagram.com/martircontabil/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -127,7 +127,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 Martir Assessoria Contábil. Todos os direitos reservados.</p>
+        <p>© 2025 Martir Contábil. Todos os direitos reservados.</p>
       </div>
     </Container>
   );
